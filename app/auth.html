@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="static_header">
+        <a href="index.html">
+            <span class="static_header-media">20 января в 18:00 (Киев) состоится мастер-класс:</span>
+            <span style="color: rgba(255,243,130,1)">«Верстка реального заказа моей компании»</span>
+        </a>
+        <span class="static_header-participation"><p>Участвовать</p>   →</span>
+        </div>
+
+
+        <header class="header" style="background-image: linear-gradient(122deg, #b22ece, #00b9d4,  #00b9d4);">
+            <div class="wrapper">
+                    <div class="heading">
+                        <div class="heading_logo">P I X E L</div>
+                       <nav class="heading__menu">
+                    <ul>
+                    <ul>
+                        <li><a href="#" title="О проекте">О проекте</a></li>
+                        <li><a href="#" title="Онлайн-Курсы">Курсы</a></li>
+                        <li><a href="#" title="Уроки и видео по дизайну и разработке сайтов / WAYUP Premiere">Премьеры</a></li>
+                        <li><a href="#" title="Блог">Блог</a></li>
+                        <li><a href="#" title="Отзывы">Отзывы</a></li>
+                        <li class="last"><a href="#" title="Контакты">Контакты</a></li>
+                    </ul>
+                    </ul>
+                </nav> 
+              
+                </div> 
+                <div class="header_content">
+                    <div class="registration_window">
+                        <div class="form_block-head">
+                            <div class="form_block-title">РЕГИСТРАЦИЯ АККАУНТА НА PIXEL</div>
+                            <div class="form_block-subtitle">Обучайтесь уже сегодня вместе с нашим сообществом!</div>
+                        </div>
+                        <div class="form_block-body">
+                            <form class="common_form" action="register">
+                                <div class="form_block">
+                                    <input value="" class="common-form__input common-form__input_name" placeholder="Имя" title="Введите только своё имя" id="wlpeUserRegisterFullName" type="text" name="fullname">
+                                    <label for="wlpeUserRegisterFullName" class="mislabel tal red close">Некорректное имя</label>
+                                </div>
+                                <div class="form_block">
+                                    <input value="" class="common-form__input common-form__input_mail" type="text" placeholder="Email" id="wlpeUserRegisterEmail" name="email">
+                                    <label for="wlpeUserRegisterEmail" class="mislabel tal red close">Некорректная почта</label>
+                                </div>
+                                <div class="form_block">
+                                    <input value="" class="common-form__input common-form__input_tel phone" type="tel" placeholder="Телефон" id="wlpeUserRegisterPhone" name="phone" autocomplete="off">
+                                    <label for="wlpeUserRegisterPhone" class="mislabelphone mislabel tal red close">Некорректный телефон</label>
+                                </div>
+                                <div class="form_block">
+                                    <input value="" class="common-form__input common-form__input_key" placeholder="Пароль" id="wlpeUserRegisterPassword" type="password" name="password">
+                                    <label for="wlpeUserRegisterPassword" class="mislabel tal red close">Некорректный пароль (8 символов или более)</label>
+                                </div>
+                                <div class="form_block">
+                                    <label for="wlpeTosCheckbox" id="wlpeTosCheckboxLabel">
+                                        <input type="checkbox" id="wlpeTosCheckbox" name="tos">
+                                        <span class="ofer">Я соглашаюсь с политикой обработки данных и </span><a href="#" target="_blank">договором оферты</a>
+                                    </label>
+                                </div>
+                                <button class="common-form__btn" id="wlpeSaveRegisterButton" name="service" value="register" type="submit">Отправить</button>
+                                <label for="wlpeSaveRegisterButton" class="mislabel tal red close cenbut">Все поля должны быть корректно заполнены</label>
+                            </form>
+                            <a href="login" class="form-block__enter"><span>У меня уже есть аккаунт — </span>Войти</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                </div>
+            </div>
+            </header>
+        
+</body>
+</html>
