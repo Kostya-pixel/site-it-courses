@@ -191,12 +191,12 @@ transition: all .3s ease;
     position: relative;
     // border: 3px solid white;
     & img{
-        width: 100%;
-        height: 300px;
-        opacity: 0.5;
-        border-radius: 20px;
-        -webkit-box-shadow: 10px -5px 22px -3px #000000; 
-        box-shadow: 10px -5px 22px -3px #000000;
+    width: 100%;
+    height: 300px;
+    opacity: 0.5;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px -5px 22px -3px #000000; 
+    box-shadow: 10px -5px 22px -3px #000000;
     }
 }
 .block_offer{
@@ -402,9 +402,9 @@ transition: all .3s ease;
     }
 }
 @media(max-width: 950px){
-    .why_comp{
-        width: 100%;
-    }
+.why_comp{
+    width: 100%;
+}
 }
 
 .why_surname{
@@ -412,4 +412,166 @@ transition: all .3s ease;
 }
 .why_plus{
     font-size: 13px;
+}
+// _____________container price________________
+
+.container_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 75px 26px 100px;
+    color: #2c3038;
+    // border: 3px solid red;
+    
+}
+.block_price-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 30px;
+    width: 75%;
+    min-height: 800px;
+    height: 100%;
+    background: rgb(236, 229, 229);
+    // border: 3px solid rgb(22, 177, 48);
+    left: 500px;
+}
+@media(max-width: 950px){
+    .block_why-flex{
+    width: 100%;
+}
+}
+.price-block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    background: white;
+    padding: 20px 20px 10px 20px;
+    margin: 3px 0 3px 0;
+    transition: 0.5s;
+    // border: 3px solid rgb(177, 22, 22);
+    &:hover{
+    width: 320px;
+    height: 520px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 28px 4px rgba(0,0,0,0.6);
+    .sign_up-starting, .sign_up-pro, .sign_up-expert{
+    transition: 0.5s;
+    margin-top: 435px;
+    }
+    }
+}
+
+.price_title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.starting{
+    background: linear-gradient(180deg, #4fdbd0 33%, #5481e2 66%, #8f3ca0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+
+}
+.pro{
+    background: linear-gradient(180deg, #e27bf0 33%, #a109e7 66%, #8f3ca0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+}
+.expert{
+    background: linear-gradient(180deg, #f11212 33%, #f3969a 66%, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 20px auto;
+}
+.cost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white; 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 35px 25px -3px rgba(0,0,0,0.11);
+    & p{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+}
+.starting_cost{
+    background-image: linear-gradient(to bottom, #37f2c9, #00aeff, #0097ff, #839af8, #d6bceb);
+}
+.pro_cost{
+    background-image: linear-gradient(to bottom, #f237aa, #e017e0, #910763, #7c1696, #d6bceb);
+}
+.expert_cost{
+    background-image: linear-gradient(to bottom, #ee7777, #f55757, #ff3535, #c41717, #ff0000);
+}
+
+.sub{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.sign_up-starting, .sign_up-pro, .sign_up-expert{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    width: 120px;
+    height: 60px;
+    margin-top: 420px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    font-size: 18px;
+    transition: 0.5s;
+    color: white; 
+    background-image: linear-gradient(to bottom, #37f2c9, #00aeff, #0097ff, #839af8, #d6bceb);
+}
+.sign_up-pro{
+    background-image: linear-gradient(to bottom, #f237aa, #e017e0, #910763, #7c1696, #d6bceb);
+}
+.sign_up-expert{
+    background-image: linear-gradient(to bottom, #ee7777, #f55757, #ff3535, #c41717, #ff0000);
+}
+
+.user span, .disk-space span, .support span, .update span, .service span{
+    color: black;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.grey{
+    color: rgb(204, 199, 199);
+    & span{
+    color: rgb(204, 199, 199);
+
+    }
 }
