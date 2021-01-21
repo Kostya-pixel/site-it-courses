@@ -12,19 +12,11 @@
     <title>Регистрация</title>
 </head>
 <body>
-    <div class="static_header">
-        <a href="index.html">
-            <span class="static_header-media">20 января в 18:00 (Киев) состоится мастер-класс:</span>
-            <span style="color: rgba(255,243,130,1)">«Верстка реального заказа моей компании»</span>
-        </a>
-        <span class="static_header-participation"><p>Участвовать</p>   →</span>
-        </div>
-
-
+   
         <header class="header" style="background-image: linear-gradient(122deg, #b22ece, #00b9d4,  #00b9d4);">
             <div class="wrapper">
                     <div class="heading">
-                        <div class="heading_logo">P I X E L</div>
+                        <div class="heading_logo"><a href="index.html">P I X E L</a></div>
                        <nav class="heading__menu">
                     <ul>
                     <ul>
@@ -55,10 +47,7 @@
                                     <input value="" class="common-form__input common-form__input_mail" type="text" placeholder="Email" id="wlpeUserRegisterEmail" name="email">
                                     <label for="wlpeUserRegisterEmail" class="mislabel tal red close">Некорректная почта</label>
                                 </div>
-                                <div class="form_block">
-                                    <input value="" class="common-form__input common-form__input_tel phone" type="tel" placeholder="Телефон" id="wlpeUserRegisterPhone" name="phone" autocomplete="off">
-                                    <label for="wlpeUserRegisterPhone" class="mislabelphone mislabel tal red close">Некорректный телефон</label>
-                                </div>
+                                
                                 <div class="form_block">
                                     <input value="" class="common-form__input common-form__input_key" placeholder="Пароль" id="wlpeUserRegisterPassword" type="password" name="password">
                                     <label for="wlpeUserRegisterPassword" class="mislabel tal red close">Некорректный пароль (8 символов или более)</label>
@@ -66,7 +55,7 @@
                                 <div class="form_block">
                                     <label for="wlpeTosCheckbox" id="wlpeTosCheckboxLabel">
                                         <input type="checkbox" id="wlpeTosCheckbox" name="tos">
-                                        <span class="ofer">Я соглашаюсь с политикой обработки данных и </span><a href="#" target="_blank">договором оферты</a>
+                                        <span class="ofer">Я соглашаюсь с политикой обработки данных и </span><a href="#" target="_blank"><br>договором оферты</a>
                                     </label>
                                 </div>
                                 <button class="common-form__btn" id="wlpeSaveRegisterButton" name="service" value="register" type="submit">Отправить</button>

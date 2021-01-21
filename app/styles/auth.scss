@@ -87,8 +87,11 @@ height: 100%;
 .heading_logo{
 font-size: 25px;
 font-weight: 700;
-// border: 2px solid red;
 margin-left: -100px;
+& a{
+text-decoration: none;
+color: white;
+}
 }
 }
 .heading__menu ul li{
@@ -144,7 +147,7 @@ height: 100%;
 background: #fff; 
 box-sizing: border-box;
 border-radius: 30px; 
-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 0px 5px 42px 29px rgba(169,221,255,0.76);
+// box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 0px 5px 42px 29px rgba(169,221,255,0.76);
 
 }
 .form_block-head{
@@ -229,8 +232,10 @@ font-size: 14px;
 text-align: center;
 }
 & a{
+text-decoration: none;
 text-align: center;
 color: #01bcd4;
+font-size: 14px;
 }
 & input{
 margin: 3px 3px 3px 3px;    
@@ -239,10 +244,11 @@ margin: 3px 3px 3px 3px;
 .form-block__enter{
 text-align: center;
 color: #01bcd4;
-font-size: 13px;
+font-size: 14px;
+text-decoration: none;
 & span {
 color: gray;
-font-size: 13px;
+font-size: 14px;
 }
 }
 .form_block{
